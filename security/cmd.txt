@@ -1,0 +1,5 @@
+git clone https://github.com/letsencrypt/letsencrypt *****ONLY NEEDED FIRST TIME*****
+cd letsencrypt
+sudo ./letsencrypt-auto -a manual certonly
+sudo openssl rsa -inform pem -in /etc/letsencrypt/live/www.soumyajitnayak.com/privkey.pem -outform pem | less
+sudo less /etc/letsencrypt/live/www.soumyajitnayak.com/fullchain.pem
